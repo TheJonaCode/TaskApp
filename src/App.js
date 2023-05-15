@@ -1,4 +1,4 @@
-import {Route, Switch} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 
 import Heading from './components/Heading';
 import TaskForm from './components/TaskForm';
@@ -9,9 +9,15 @@ import './App.css';
 function App() {
   return (
     <div>
-      <Heading/>
-
-      <TaskList/>
+      <div className="h-screen text-white text-center p-10">
+        <div className="container mx-auto h-full">
+          <Heading/>
+          <Routes>
+            <Route path='/' element={<TaskList />} />
+            <Route path='/add' element={<TaskForm/>} />
+          </Routes>
+        </div>
+      </div>
     </div>
   );
 }
