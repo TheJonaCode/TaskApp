@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {IoMdAdd} from 'react-icons/io';
 
 const Heading = () => {
     return(
@@ -13,6 +14,7 @@ const Heading = () => {
                     <Link to="/add">
                         <button className="bg-green-400 hover:bg-green-500 text-white font-semibold py-2 px-4
                         rounded inline-flex items-center">
+                            <IoMdAdd />
                             Add Employee
                         </button>
                     </Link>
