@@ -10,8 +10,8 @@ const initialState = {
       },
       {
         id: "2",
-        title: "some title",
-        description: "some description",
+        title: "second title",
+        description: "another description",
         done: false,
       },
     ],
